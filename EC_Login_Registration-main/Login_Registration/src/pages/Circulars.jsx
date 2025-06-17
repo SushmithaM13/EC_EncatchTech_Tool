@@ -23,6 +23,11 @@ const circularData = [
     date: '2025-06-05',
     description: 'Annual Sports Day will be held on 30th June. Students should register by 20th June.',
   },
+  {
+    title: 'Annual Sports Day',
+    date: '2025-06-05',
+    description: 'Annual Sports Day will be held on 30th June. Students should register by 20th June.',
+  },
 ];
 
 const Circulars = () => {
