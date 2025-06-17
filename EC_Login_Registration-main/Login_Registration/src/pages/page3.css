@@ -1,0 +1,49 @@
+.page3-container {
+  padding: 40px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.page3-title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.class-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.class-btn {
+  padding: 15px 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Color styles for each class */
+.class-1 { background-color: #3498db; }
+.class-2 { background-color: #e67e22; }
+.class-3 { background-color: #2ecc71; }
+.class-4 { background-color: #9b59b6; }
+.class-5 { background-color: #f1c40f; color: #000; }
+.class-6 { background-color: #1abc9c; }
+.class-7 { background-color: #e74c3c; }
+.class-8 { background-color: #34495e; }
+.class-9 { background-color: #16a085; }
+.class-10 { background-color: #8e44ad; }
+
+.class-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}

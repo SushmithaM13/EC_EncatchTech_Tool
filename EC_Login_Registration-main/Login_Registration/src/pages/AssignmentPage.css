@@ -1,0 +1,30 @@
+.assignment-container {
+  padding: 20px;
+  background-color: #f7f9fc;
+  min-height: 100vh;
+}
+
+.question-block {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+
+.question-text {
+  color: #003366;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.option-label {
+  display: block;
+  margin: 6px 0;
+  color: #800000;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.correct-option {
+  color: green !important;
+  font-weight: bold;
+}

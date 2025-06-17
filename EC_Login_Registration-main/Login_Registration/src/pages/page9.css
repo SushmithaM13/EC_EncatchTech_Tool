@@ -1,0 +1,142 @@
+.page-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.page-heading {
+  text-align: center;
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.notification-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.notification-table th,
+.notification-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.notification-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+}
+
+.notification-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.clickable-id {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.clickable-id:hover {
+  color: #0056b3;
+}
+
+.edit-btn,
+.delete-btn,
+.add-row-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #07ff2cd3;
+  color: #333;
+}
+
+.edit-btn:hover {
+  background-color: #e0a800;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.add-row {
+  text-align: center;
+}
+
+.add-row-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.add-row-btn:hover {
+  background-color: #218838;
+}
+
+.icon {
+  margin-right: 6px;
+}
+
+.popup-panel {
+  position: fixed;
+  top: 10%;
+  right: 5%;
+  width: 320px;
+  background-color: white;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.popup-panel h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.popup-panel p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.close-popup-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.close-popup-btn:hover {
+  color: #000;
+}
