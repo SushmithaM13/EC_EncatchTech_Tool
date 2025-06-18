@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../../styles/signUp.css";
 
 export const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -32,17 +33,9 @@ export const SignUp = () => {
   };
 
   return (
-    <div style={{
-      maxWidth: "400px",
-      margin: "auto",
-      padding: "30px",
-      fontFamily: "Arial, sans-serif",
-      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-      borderRadius: "10px", 
-      backgroundColor: "#fff" 
-    }}>
+    <div className="signup-container">
       <h2 style={{ textAlign: "center" }}>Sign up</h2>
-      <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: "15px" }}>
+      <form onSubmit={handleSubmit} className="signup-form">
         <input
           type="text"
           name="name"
@@ -50,7 +43,7 @@ export const SignUp = () => {
           value={formData.name}
           onChange={handleChange}
           required
-          style={inputStyle}
+          className="signup-input"
         />
         <input
           type="email"
@@ -59,7 +52,7 @@ export const SignUp = () => {
           value={formData.email}
           onChange={handleChange}
           required
-          style={inputStyle}
+          className="signup-input"
         />
         <input
           type="password"
@@ -68,7 +61,7 @@ export const SignUp = () => {
           value={formData.password}
           onChange={handleChange}
           required
-          style={inputStyle}
+          className="signup-input"
         />
         <input
           type="password"
@@ -77,7 +70,7 @@ export const SignUp = () => {
           value={formData.confirmPassword}
           onChange={handleChange}
           required
-          style={inputStyle}
+          className="signup-input"
         />
 
         <label style={{ fontSize: "14px" }}>
@@ -91,40 +84,14 @@ export const SignUp = () => {
           I agree to all Term, Privacy Policy and Fees
         </label>
 
-        <button type="submit" style={{
-          backgroundColor: "#6c47ff",
-          color: "white",
-          padding: "12px",
-          border: "none",
-          borderRadius: "5px",
-          fontWeight: "bold",
-          fontSize: "16px",
-          cursor: "pointer"
-        }}>
-          Sign up
-        </button>
+        <button type="submit" className="signup-button">Sign up</button>
       </form>
 
-      <div style={{
-        textAlign: "center",
-        margin: "20px 0",
-        borderTop: "1px solid #ccc",
-        position: "relative"
-      }}>
-        <span style={{
-          position: "absolute",
-          top: "-12px",
-          left: "50%",
-          transform: "translateX(-50%)",
-          background: "#fff",
-          padding: "0 10px",
-          color: "#999"
-        }}>
-          Or sign up with
-        </span>
+      <div className="signup-divider">
+        <span>Or sign up with</span>
       </div>
 
-      <div style={{ display: "flex", justifyContent: "center", gap: "20px" }}>
+      <div className="social-icons">
         <SocialIcon src="https://img.icons8.com/color/48/google-logo.png" alt="Google" />
         <SocialIcon src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook" />
         <SocialIcon src="https://img.icons8.com/ios-filled/48/000000/twitterx.png" alt="X" />
@@ -133,26 +100,8 @@ export const SignUp = () => {
   );
 };
 
-const inputStyle = {
-  padding: "10px",
-  borderRadius: "5px",
-  border: "1px solid #ccc",
-  fontSize: "14px"
-};
-
 const SocialIcon = ({ src, alt }) => (
-  <img
-    src={src}
-    alt={alt}
-    style={{
-      width: "40px",
-      height: "40px",
-      cursor: "pointer",
-      border: "1px solid #ccc",
-      borderRadius: "5px",
-      padding: "5px"
-    }}
-  />
+  <img src={src} alt={alt} className="social-icon" />
 );
 
 export default SignUp;

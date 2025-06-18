@@ -1,17 +1,18 @@
 import { Routes, Route } from "react-router-dom";
-import Login from "../pages/login";
-import SignUp from "../pages/signUp";
-import Home from "../pages/home";
-import Page from "../pages/page";
 import PrivateRoute from "./PrivateRoute";
+import Login from "../components/Auth/login";
+import SignUp from "../components/Auth/signUp";
+import Home from "../components/home";
+import Appointments from "../pages/Appointments/appointments";
+
 
 export const RoutingAll = () => {
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
-      <Route path="/signUp" element={<SignUp />} />
+      <Route path="/signUp" element={<SignUp/>} />
       <Route path="/" element={<PrivateRoute><Home /></PrivateRoute>}/>
-      <Route path="/page1" element={<Page />} />
+      <Route path="/appointments" element={<Appointments/>} />
     </Routes>
   );
 };
